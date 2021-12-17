@@ -1,0 +1,177 @@
+http://tutorial.techaltum.com/cssselectors.html
+
+me  Web Designing  CSS CSS Selectors
+Total Page Views :-  webs counters 
+For Detailed list of CSS-3 Selectors, click here CSS3 Selectors
+
+css selectors
+Selectors type in CSS
+Tag Selector
+Id Selector
+Class Selector
+Grouping
+Nesting
+CSS Selectors with use
+Selector	Way to write	Use
+Tag Selector	p{}	Used to call all p tags
+ID Selector	#para{}	Used to call that unique element with id para.
+Class Selector	.para{}	Used to call group of different elements with class para
+Tag with Class Selector	p.para{}	Used to call only p elements with class para
+Grouping Selector	h1, h3, h5{}	Used to group <h1>, <h3> <h5> elements
+Nesting Selector	div p{}	Used to call only p elements with parent div.
+Universal Selector	*{}	Used to call all elements in web document.
+Tag Selectors
+
+The first Major selector in css is TAG Selector
+
+(How to write a CSS in HTML code)
+
+
+<html>
+<head>
+<title>Title of Webpage</title>
+<style>
+h3{ color:red}
+p{ color:blue; text-align:center}
+</style>
+</head>
+<body>
+      <h3>This heading will be red.</h3>
+      <p>This text will be blue and center align.</p>
+</body>
+</html>
+(How CSS Looks like on browser)
+
+This heading will be red.
+This text will be blue and center align.
+
+ID Selectors
+
+ID Selector is used to call an HTML Element with its unique id 
+Id is always unique in a single web page. We can not gives same ID to two different HTML Elements.
+Id is basically an Attribute used in Opening or Start Tag. Inside double Quotation, the value of ID is given.
+in css code, Id is always starts with HASH ( #), than id value.
+
+(How to write ID Selector in HTML code)
+
+
+<html>
+<head>
+<title>Title of Webpage</title>
+<style>
+#head1{ color:green}
+#para{ color:red; background:yellow}
+p{ color:blue}
+</style>
+</head>
+<body>
+      <h3 id="head1">This heading will be green.</h3>
+      <p id="para>This text will be red and background yellow.</p>
+	<p>i am a paragraph without id</p>
+</body>
+</html>
+(How CSS Looks like on browser)
+
+This heading will be green.
+This text will be red and background yellow.
+
+i am a paragraph without id
+
+Class Selectors
+
+Class Selector is used to call all html Elements with same class.
+Class represents a group of different elements. We can gives same Class to two or more different HTML Elements.
+Class is basically an Attribute used in Opening or Start Tag. Inside double Quotation, the value of Class is given.
+in css, class always starts with DOT ( .), than class value.
+
+(How to write Class Selector in HTML code)
+
+
+<html>
+<head>
+<title>Title of Webpage</title>
+<style>
+.head{ color:orange}
+.para{ color:white; background:blue}
+</style>
+</head>
+<body>
+	  <h5 class="head">This heading will be red.</h3>
+      <h3 class="head">This heading will be red too.</h3>
+      <p class="para>This text will be white and background blue.</p>
+</body>
+</html>
+(How CSS Looks like on browser)
+
+This heading will be red.
+
+This heading will be red too.
+This text will be white and background blue.
+
+Grouping in CSS
+
+Grouping is used to call a group of HTML Elements.
+Unlike Class selector, we don't need to write class attribute with particular value.
+We can group multiple tags, IDs and Classes. We have to use COMMA (,) to separate Selectors in grouping.
+
+(How to write Grouping in HTML code)
+
+
+<html>
+<head>
+<title>Title of Webpage</title>
+<style>
+h5,h3,p{ 
+	color:blue; 
+	text-align:center;
+}
+</style>
+</head>
+<body>
+	<h5>This heading will be red.</h3>
+	<h3>This heading will be red too.</h3>
+	<p class="para>This para will be red too.</p>
+</body>
+</html>
+(How CSS Looks like on browser)
+
+This heading will be red.
+
+This heading will be red too.
+This para will be red too.
+
+Nesting in CSS
+
+Nesting is used to call a particular child of parent Element.
+If we are calling a P tag, all Para Tags will be selected.
+We can Nest a particular tag of parent using nesting.
+We use single space bar to relate child of that particular element.
+
+(How to write Nesting in HTML code)
+
+<html>
+<head>
+<title>Title of Webpage</title>
+<style>
+p{ color:red}
+.header p{ color:white; background:gray}          /*This is Nesting */
+</style>
+</head>
+<body>
+	<div class="header">
+		<p>This para is inside div.</h3>
+	</div>
+	<p>This para is outside div.</p>
+</body>
+</html>
+In Example below, all para are assigned red color, but para inside header class assigned color white
+
+(How CSS Looks like on browser)
+
+
+This para is inside div
+
+
+This para is outside div.
+
+- See more at: http://tutorial.techaltum.com/cssselectors.html#sthash.ILtCDx8U.dpuf
